@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* This code is going to make a CSS framework from scratch
+	by Khadirah Hobbs*/
+
+section {
+	
+}
+
+.special {
+	margin-left: 20px;
+}
+
+section div {
+	margin: 0 auto;
+	vertical-align: middle;
+}
+
+.col {
+	display: inline-block;
+}
+
+.col img {
+	width: 100%;
+	margin-top: 50px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+}
+
+
+/* Specific classes */
+
+
+/* Columns' widths */
+
+.col-1 {
+	width: 100%;
+}
+
+.col-1-2 {
+	width: 49.5%;
+}
+
+.col-1-3 {
+	width: 32.666667%;
+}
+
+.col-2-3 {
+	width: 65.333333%;
+}
+
+.col-1-4 {
+	width: 24.25%;
+}
+
+.col-1-5 {
+	width: 19.2%;
+}
+
+.col-1-6 {
+	width: 15.833333%;
+}
+
+.col-1-8 {
+	width: 11.625%;
+}
+
+.col-1-9 {
+	width: 10.222222%;
+	overflow: hidden;
+}
+
+.col-1-10 {
+	width: 9.1%;
+}
+
+.col-1-12 {
+	width: 7.416667%;
+	overflow: hidden;
+}
+
+	
+@media only screen and (max-width: 720px)
+{
+	/* if the device is less that or equal to 720px,
+then the website will do the following */
+
+	.col { 
+		margin: 1% 0;
+	}
+	
+	.col-1,.col-1-2 {
+		width: 100%;
+	}
+
+	.col-1-3 {
+		margin-right: .7%;
+	}
+
+	.col-1-4 {
+		width: 48%;
+
+	}
+
+	.col-1-6, .col-1-6, .col-1-8, .col-1-9, .col-1-10, .col-1-12 {
+		display: none;
+	}
+
+	.col-1-5 {
+		margin: 1% .80% 1% 0;
+	}
+
+	/*div.col {
+		text-align: center;
+		color: #fff;
+		background: #6fbc9c;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+	}	*/
+
+}/* closes media query for max-width: 720px */
+
+@media only screen and (max-width: 480px) 
+{
+	/* if the device is less that or equal to 480px,
+then the website will do the following */
+	
+	.col { 
+		margin: 1% 0;
+	}
+
+	.col-1, .col-1-2, .col-1-3, .col-2-3, .col-1-4, .col-1-5,
+	.col-1-6, .col-1-8, .col-1-9, .col-1-10, .col-1-12 { 
+		width: 100%; 
+	}
+
+	.col-1-6, .col-1-6, .col-1-8, .col-1-9, .col-1-10, .col-1-12 {
+		display: none;
+	}
+	
+	/* div.col {
+		background-color: #6CBCC9;
+	} */
+
+}/*closes media query for max-width: 480px*/
